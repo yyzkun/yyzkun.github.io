@@ -1,0 +1,73 @@
+.tip_bar {
+    height: 30px;
+    background: #f0f0f0;
+}
+.tip_bar p {
+    line-height: 30px;
+    font-size: 12px;
+}
+header {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {
+    font-size: 16px;
+}
+header li {
+    font-size: 14px;
+}
+.model_title {
+    font-size: 16px;
+}
+._body {
+    min-height: calc(100vh - 110px);
+    padding: 20px 0;
+}
+footer {
+    line-height: 30px;
+    text-align: center;
+    font-size: 12px;
+    background: #f0f0f0;
+}
+.info_list {
+    display: flex;
+    padding-top: 20px;
+    flex-direction: column;
+}
+
+.info_list li {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    line-height: 40px;
+    margin: 10px 20px;
+}
+._langu {
+    padding: 20px 0;
+}
+.tag-list {
+    padding: 20px;
+    display: flex;
+}
+.tag-list li {
+    margin: 10px;
+    font-size: 12px;
+    padding: 0 16px;
+    background: #f0f0f0;
+    line-height: 30px;
+    border-radius: 4px;
+}
+.desc {
+    text-indent: 2em;
+    line-height: 30rpx;
+    padding: 20px 0;
+}
+.connect_list {
+    padding: 20px;
+}
+.connect_list li {
+    line-height: 30px;
+    font-size: 12px;
+}
