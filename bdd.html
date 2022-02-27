@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            line-height: 1.4;
+            /* box-sizing: border-box; */
+        }
+        #root {
+            position: relative;
+            margin-top: 50px;
+            margin: auto;
+            width: 370px;
+            height: 100vh;
+        }
+        .body {
+            width: 250px;
+            height: 300px;
+            border: 10px solid #000;
+            border-radius: 55% 55% 55% 55% / 50% 50% 66% 66%;
+            position: absolute;
+            left: 50px;
+            top: 50px;
+            z-index: 10;
+            background: #fff;
+        }
+        .erduo_l_t {
+            width: 60px;
+            height: 40px;
+            border: 10px solid #000;
+            background: #000;
+            border-radius: 50%;
+            position: absolute;
+            left: 50px;
+            top: 65px;
+            transform: rotate(45deg);
+        }
+        .erduo_r_t {
+            transform: rotate(-45deg);
+            right: 50px;
+            left: initial;
+        }
+        .line_1 {
+            position: absolute;
+            left: 0;
+            top: 34px;
+            right: 0;
+            margin: auto;
+            width: 200px;
+            height: 160px;
+            border: 4px solid #6cf078;
+            border-radius: 66% 66% 50% 50% / 77% 77% 50% 50%;;
+        }
+        .line_2 {
+            top: 38px;
+            width: 194px;
+            height: 152px;
+            border-color: #edf466;
+        }
+        .line_3 {
+            top: 42px;
+            width: 186px;
+            height: 146px;
+            border-color: #ee39d3;
+        }
+        .line_4 {
+            top: 46px;
+            width: 178px;
+            height: 138px;
+            border-color: #335fe6;
+        }
+        .line_5 {
+            top: 50px;
+            width: 170px;
+            height: 130px;
+            border-color: #1c1f00;
+        }
+        .eys {
+            width: 60px;
+            height: 35px;
+            border: 2px #000 solid;
+            border-radius: 50%;
+            background: #000;
+            position: absolute;
+            left: 50px;
+            top: 80px;
+            transform: rotate(-30deg);
+        }
+        .crycle {
+            width: 20px;
+            height: 20px;
+            border: 2px solid #fff;
+            border-radius: 50%;
+            position: absolute;
+            right: 10px;
+            top: 5px;
+        }
+        .d {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background-color: #fff;
+            position: absolute;
+            top: 4px;
+            left: 4px;
+        }
+        .eys._l {
+            left: initial;
+            right: 50px;
+            transform: rotate(30deg);
+        }
+        .eys._l .crycle {
+            right: initial;
+            left: 10px;
+        }
+        .eys._l .d {
+            left: initial;
+            right: 4px;
+        }
+        .nos {
+            border-bottom: 26px solid #000;
+            border-left: transparent solid 30px;
+            border-right: transparent solid 30px;
+            border-radius: 20px;
+            width: 0;
+            height: 0;
+            position: absolute;
+            top: 125px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            transform: rotate(180deg);
+        }
+        .zui {
+            width: 60px;
+            height: 40px;
+            border-radius: 50%;
+            border-bottom: 5px solid #000;
+            margin: 0 auto;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 130px;
+        }
+        .text {
+            position: absolute;
+            bottom: 40px;
+            text-align: center;
+            width: 80%;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            font-size: 24px;
+        }
+        span {
+            color: red;
+        }
+        .yuan {
+            width: 70px;
+            height: 70px;
+            background-color: #000;
+            border-radius: 50%;
+        }
+        .tui {
+            position: absolute;
+            top: 340px;
+            left: 90px;
+        }
+        .tui .ddd {
+            width: 30px;
+            height: 80px;
+            position: absolute;
+            top: -50px;
+            left: 7px;
+            background: #000;
+            transform: rotate(10deg);
+        }
+        .tui_r {
+            left: initial;
+            right: 90px;
+        }
+        .tui_r .ddd {
+            left: initial;
+            right: 7px;
+            transform: rotate(-10deg);
+        }
+        .shou {
+            position: absolute;
+            left: 30px;
+            top: 180px;
+            width: 50px;
+            height: 100px;
+            background: #000;
+            border-radius: 48%;
+            transform: rotate(-30deg);
+        }
+        .shou_r .yuan {
+            width: 60px;
+            height: 60px;
+        }
+        .shou_r {
+            top: 250px;
+            left: initial;
+            right: 15px;
+        }
+        .shou_r .ddd {
+            transform: rotate(-58deg);
+            top: -34px;
+            left: 0px;
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="root">
+        <div class="body">
+            <div class="line_1"></div>
+            <div class="line_1 line_2"></div>
+            <div class="line_1 line_3"></div>
+            <div class="line_1 line_4"></div>
+            <div class="line_1 line_5"></div>
+            <div class="eys">
+                <div class="crycle">
+                    <div class="d"></div>
+                </div>
+            </div>
+            <div class="eys _l">
+                <div class="crycle">
+                    <div class="d"></div>
+                </div>
+            </div>
+            <!-- 鼻子 -->
+            <div class="nos"></div>
+            <div class="zui"></div>
+            <div class="text">For <span>L M M</span></div>
+        </div>
+        <div class="erduo_l_t"></div>
+        <div class="erduo_l_t erduo_r_t"></div>
+        <!-- 腿 -->
+        <div class="tui">
+            <div class="yuan"></div>
+            <div class="ddd"></div>
+        </div>
+        <div class="tui tui_r">
+            <div class="yuan"></div>
+            <div class="ddd"></div>
+        </div>
+        <div class="tui tui_r shou_r">
+            <div class="yuan"></div>
+            <div class="ddd"></div>
+        </div>
+        <div class="shou">
+        </div>
+
+    </div>
+</body>
+</html>
